@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import MobileNavigation from './MobileNavigation';
-import DesktopNavigation from './DesktopNavigation';
+import Navigation from './Navigation';
 
 const Navbar = () => {
   return (
@@ -16,8 +15,8 @@ const Navbar = () => {
         />
         <p className="logo_text">YPrompts</p>
       </Link>
-      {/* Desktop Navigation */}
-      <DesktopNavigation />
+      {/* Desktop And Mobile Navigation */}
+      <Navigation />
     </nav>
   );
 };
