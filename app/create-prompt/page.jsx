@@ -4,7 +4,7 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-const CreatePrompt = () => {
+const CreatePromptPage = () => {
   const { data: session } = useSession();
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
@@ -46,4 +46,4 @@ const CreatePrompt = () => {
     />
   );
 };
-export default CreatePrompt;
+export default CreatePromptPage;
